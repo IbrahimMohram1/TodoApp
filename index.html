@@ -24,31 +24,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="w-50 m-auto shadow-lg task-form p-4 my-4 rounded-3">
-      <div class="d-flex justify-content-between align-items-center">
-        <input
-          id="taskInput"
-          type="text"
-          class="form-control my-3"
-          placeholder="Type Your task .... "
-        />
-        <button
-          id="taskButton"
-          class="btn btn-outline-primary w-25 mx-3 text-white"
-        >
-          Add Task
-        </button>
-      </div>
-      <h4 class="text-center text-white my-4">All Tasks</h4>
-      <div class="d-flex justify-content-center align-items-center">
-        <span id="loading" class="loader"></span>
-      </div>
-      <div class="alert alert-danger d-none" role="alert">
-        Please Enter a Valid task Not a empty value
-      </div>
-      <h4 id="taskEmpty" class="text-danger text-center">No Tasks</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto mt-4">
+          <div class="shadow-lg task-form p-4 my-4 rounded-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <input
+                id="taskInput"
+                type="text"
+                class="form-control my-3"
+                placeholder="Type Your task .... "
+              />
+              <button
+                id="taskButton"
+                class="btn btn-outline-primary w-25 mx-3 text-white"
+              >
+                Add Task
+              </button>
+            </div>
+            <h4 class="text-center text-white my-4">All Tasks</h4>
+            <div class="d-flex justify-content-center align-items-center">
+              <span id="loading" class="loader"></span>
+            </div>
+            <div class="alert alert-danger d-none" role="alert">
+              Please Enter a Valid task Not a empty value
+            </div>
+            <h4 id="taskEmpty" class="text-danger text-center">No Tasks</h4>
 
-      <div id="tasks" class="tasks text-white"></div>
+            <div id="tasks" class="tasks text-white"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
